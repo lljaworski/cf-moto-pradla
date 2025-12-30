@@ -16,7 +16,7 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Odwiedź Nas w Ozorkowie</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Odwiedź Nas w Pradle</h2>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">Zapraszamy do naszego salonu i serwisu</p>
         </motion.div>
 
@@ -37,9 +37,9 @@ export function ContactSection() {
                     <div>
                       <h3 className="font-bold text-foreground mb-1">Adres</h3>
                       <p className="text-muted-foreground">
-                        ul. Błędzińska 46
+                        Wyzwolenia 90
                         <br />
-                        95-035 Ozorków
+                        42-425 Pradła
                       </p>
                     </div>
                   </div>
@@ -84,17 +84,17 @@ export function ContactSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <Card className="h-full overflow-hidden border-2 shadow-lg">
+            <Card className="h-full overflow-hidden border-2 shadow-lg p-0">
               <CardContent className="p-0 h-full min-h-[400px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2465.357!2d19.2789!3d51.9677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcb8c7d5e5e5d%3A0x5c5c5c5c5c5c5c5c!2zQmzEmWR6acWEc2thIDQ2LCA5NS0wMzUgT3pvcmvDs3c!5e0!3m2!1spl!2spl!4v1234567890"
+                  src="https://maps.google.com/maps?q=Wyzwolenia+90,+42-425+Pradła,+Poland&z=14&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: 400 }}
                   allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Mapa lokalizacji ER-TECH Ozorków"
+                  title="Mapa lokalizacji CF MOTO Pradła"
                 />
               </CardContent>
             </Card>

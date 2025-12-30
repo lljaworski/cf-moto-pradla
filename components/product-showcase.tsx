@@ -52,13 +52,13 @@ export function ProductShowcase() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-xl transition-all duration-300 border-2 group overflow-hidden shadow-md bg-background">
+              <Card className="h-full hover:shadow-xl transition-all duration-300 border-2 group overflow-hidden shadow-md bg-background p-0">
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden">
                     <img
                       src={product.image || "/placeholder.svg"}
                       alt={product.name}
-                      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 block"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>

@@ -43,12 +43,12 @@ export function SpecialistSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <Card className="overflow-hidden border-2 shadow-lg rounded-lg">
+            <Card className="overflow-hidden border-2 shadow-lg rounded-lg p-0">
               <CardContent className="p-0">
                 <img
                   src="/cf-moto-pradla/atv-quad-with-trailer-work-equipment.jpg"
                   alt="Quad z przyczepką"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover block"
                 />
               </CardContent>
             </Card>
