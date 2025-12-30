@@ -46,7 +46,7 @@ export function SpecialistSection() {
             <Card className="overflow-hidden border-2 shadow-lg rounded-lg">
               <CardContent className="p-0">
                 <img
-                  src="/atv-quad-with-trailer-work-equipment.jpg"
+                  src="/cf-moto-pradla/atv-quad-with-trailer-work-equipment.jpg"
                   alt="Quad z przyczepką"
                   className="w-full h-auto object-cover"
                 />

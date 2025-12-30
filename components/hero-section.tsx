@@ -9,7 +9,7 @@ export function HeroSection() {
       {/* Background: Sand mountain/dune landscape */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/gemini-generated-image-3cinuh3cinuh3cin.jpeg"
+          src="/cf-moto-pradla/images/gemini-generated-image-3cinuh3cinuh3cin.jpeg"
           alt="CF MOTO quad riding up sand dune at sunset"
           className="w-full h-full object-cover"
         />

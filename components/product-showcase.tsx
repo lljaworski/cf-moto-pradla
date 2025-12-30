@@ -8,22 +8,22 @@ import { ArrowRight } from "lucide-react"
 const products = [
   {
     name: "CFORCE 625",
-    image: "/cf-moto-cforce-625-atv-quad.jpg",
+    image: "/cf-moto-pradla/cf-moto-cforce-625-atv-quad.jpg",
     specs: ["625cc", "4x4", "EPS"],
   },
   {
     name: "CFORCE 850",
-    image: "/cf-moto-cforce-850-atv-quad.jpg",
+    image: "/cf-moto-pradla/cf-moto-cforce-850-atv-quad.jpg",
     specs: ["850cc", "4x4", "EPS"],
   },
   {
     name: "CFORCE 1000",
-    image: "/cf-moto-cforce-1000-atv-quad.jpg",
+    image: "/cf-moto-pradla/cf-moto-cforce-1000-atv-quad.jpg",
     specs: ["1000cc", "4x4", "EPS"],
   },
   {
     name: "UFORCE 1000",
-    image: "/cf-moto-uforce-1000-utv-side-by-side.jpg",
+    image: "/cf-moto-pradla/cf-moto-uforce-1000-utv-side-by-side.jpg",
     specs: ["1000cc", "UTV", "2-seater"],
   },
 ]
