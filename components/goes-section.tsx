@@ -10,7 +10,7 @@ const categories = [
     slug: "atv",
     name: "Quady ATV",
     description: "Niezawodne quady GOES do rekreacji i pracy w terenie",
-    image: "/cf-moto-pradla/placeholder.svg",
+    image: "/cf-moto-pradla/goes-cobalt-550-atv-quad.jpg",
     count: "Szeroki wybór modeli",
   },
 ]

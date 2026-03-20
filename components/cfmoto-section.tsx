@@ -17,8 +17,8 @@ const categories = [
     slug: "ssv",
     name: "Pojazdy SSV",
     description: "Sportowe pojazdy side-by-side do ekstremalnej jazdy",
-    image: "/cf-moto-pradla/placeholder.svg",
-    count: "Dostępne wkrótce",
+    image: "/cf-moto-pradla/cf-moto-zforce-950-ssv-side-by-side.jpg",
+    count: "Sprawdź modele",
   },
   {
     slug: "utv",
@@ -31,8 +31,8 @@ const categories = [
     slug: "motocykle",
     name: "Motocykle",
     description: "Motocykle terenowe i miejskie",
-    image: "/cf-moto-pradla/placeholder.svg",
-    count: "Dostępne wkrótce",
+    image: "/cf-moto-pradla/cf-moto-800mt-motocykl.jpg",
+    count: "Sprawdź modele",
   },
 ]
 

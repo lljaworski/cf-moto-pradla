@@ -97,19 +97,118 @@ export const cfmotoUTVProducts: Product[] = [
   },
 ]
 
-// CFmoto SSV Products (placeholder - do uzupełnienia)
+// CFmoto SSV Products
 export const cfmotoSSVProducts: Product[] = [
-  // Placeholder - dane SSV do dodania później
+  {
+    id: "zforce-950",
+    brand: "cfmoto",
+    category: "ssv",
+    name: "ZFORCE 950",
+    model: "ZFORCE 950 Sport",
+    image: "/cf-moto-pradla/cf-moto-zforce-950-ssv-side-by-side.jpg",
+    description: "Sportowy pojazd SSV z silnikiem 950cc. Doskonała wydajność w terenie, komfort i bezpieczeństwo.",
+    specs: [
+      { label: "Silnik", value: "950cc V-Twin" },
+      { label: "Miejsca", value: "2-osobowy" },
+      { label: "Moc", value: "~95 KM" },
+      { label: "Zawieszenie", value: "Regulowane amortyzatory" },
+    ],
+    price: "Zapytaj o cenę",
+    featured: true,
+  },
 ]
 
-// CFmoto Motocykle (placeholder - do uzupełnienia)
+// CFmoto Motocykle
 export const cfmotoMotorcycleProducts: Product[] = [
-  // Placeholder - dane motocykli do dodania później
+  {
+    id: "300nk",
+    brand: "cfmoto",
+    category: "motocykle",
+    name: "300NK",
+    model: "300NK",
+    image: "/cf-moto-pradla/cf-moto-300nk-motocykl.jpg",
+    description: "Sportowy naked bike z silnikiem 300cc. Idealny motocykl dla początkujących i średnio zaawansowanych kierowców.",
+    specs: [
+      { label: "Silnik", value: "300cc 1-cylindrowy" },
+      { label: "Moc", value: "~30 KM" },
+      { label: "Typ", value: "Naked bike" },
+      { label: "Prawo jazdy", value: "A2" },
+    ],
+    price: "Zapytaj o cenę",
+    featured: true,
+  },
+  {
+    id: "450mt",
+    brand: "cfmoto",
+    category: "motocykle",
+    name: "450MT",
+    model: "450MT",
+    image: "/cf-moto-pradla/cf-moto-450mt-motocykl.jpg",
+    description: "Motocykl adventure z silnikiem 450cc. Doskonały do jazdy w terenie i na drodze.",
+    specs: [
+      { label: "Silnik", value: "450cc 2-cylindrowy" },
+      { label: "Moc", value: "~45 KM" },
+      { label: "Typ", value: "Adventure" },
+      { label: "Prawo jazdy", value: "A2" },
+    ],
+    price: "Zapytaj o cenę",
+    featured: true,
+  },
+  {
+    id: "800mt",
+    brand: "cfmoto",
+    category: "motocykle",
+    name: "800MT",
+    model: "800MT",
+    image: "/cf-moto-pradla/cf-moto-800mt-motocykl.jpg",
+    description: "Flagowy motocykl adventure z silnikiem 800cc. Komfort, moc i wszechstronność w jednym.",
+    specs: [
+      { label: "Silnik", value: "800cc 2-cylindrowy" },
+      { label: "Moc", value: "~90 KM" },
+      { label: "Typ", value: "Adventure touring" },
+      { label: "Prawo jazdy", value: "A" },
+    ],
+    price: "Zapytaj o cenę",
+    featured: true,
+  },
 ]
 
-// GOES ATV Products (placeholder - do uzupełnienia)
+// GOES ATV Products
 export const goesATVProducts: Product[] = [
-  // Placeholder - dane GOES ATV do dodania później
+  {
+    id: "goes-cobalt",
+    brand: "goes",
+    category: "atv",
+    name: "GOES Cobalt",
+    model: "Cobalt 550",
+    image: "/cf-moto-pradla/goes-cobalt-550-atv-quad.jpg",
+    description: "Nowoczesny quad GOES z silnikiem 550cc. Doskonały stosunek jakości do ceny, niezawodność i komfort.",
+    specs: [
+      { label: "Silnik", value: "550cc" },
+      { label: "Napęd", value: "4x4" },
+      { label: "Moc", value: "~45 KM" },
+      { label: "Typ", value: "Rekreacyjny/Użytkowy" },
+    ],
+    price: "Zapytaj o cenę",
+    featured: true,
+  },
+  {
+    id: "goes-iron",
+    brand: "goes",
+    category: "atv",
+    name: "GOES Iron",
+    model: "Iron 650",
+    image: "/cf-moto-pradla/goes-iron-650-atv-quad.jpg",
+    description: "Wytrzymały quad użytkowy GOES z silnikiem 650cc. Stworzony do ciężkiej pracy w każdych warunkach.",
+    specs: [
+      { label: "Silnik", value: "650cc" },
+      { label: "Napęd", value: "4x4 z blokadą" },
+      { label: "Moc", value: "~50 KM" },
+      { label: "Typ", value: "Użytkowy" },
+    ],
+    price: "Zapytaj o cenę",
+    featured: true,
+  },
 ]
 
 // Helper functions to get products by brand and category
