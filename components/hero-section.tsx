@@ -37,7 +37,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 1.3 }}
               className="block"
             >
-              ER-TECH Pradła
+              QuadyPradła
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 1.7 }}
               className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             >
-              i Profesjonalizmu
+              i Terenowych Emocji
             </motion.span>
           </motion.h1>
 
@@ -64,7 +64,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 1.9 }}
             className="text-lg sm:text-xl md:text-2xl text-background/90 mb-10 max-w-2xl leading-relaxed text-pretty"
           >
-            Autoryzowany dealer i serwis quadów CF MOTO. Wybierz maszynę, która nie zna kompromisów.
+            Autoryzowany dealer CFmoto i GOES. Quady ATV, UTV, SSV i motocykle - profesjonalny serwis i kompleksowe doradztwo.
           </motion.p>
 
           {/* CTA buttons */}
@@ -74,15 +74,16 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 2.1 }}
             className="flex flex-col sm:flex-row items-start sm:items-center gap-4"
           >
-            <Button size="lg" className="w-full sm:w-auto text-lg px-8 py-6 shadow-xl">
-              Sprawdź ofertę
+            <Button size="lg" className="w-full sm:w-auto text-lg px-8 py-6 shadow-xl" asChild>
+              <a href="/cf-moto-pradla/#marki">Poznaj nasze marki</a>
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="w-full sm:w-auto text-lg px-8 py-6 bg-background/10 backdrop-blur-sm border-background/30 text-background hover:bg-background hover:text-foreground shadow-xl"
+              asChild
             >
-              609 309 741
+              <a href="tel:609309741">609 309 741</a>
             </Button>
           </motion.div>
         </motion.div>

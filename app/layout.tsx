@@ -7,9 +7,10 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ER-TECH Pradła - Autoryzowany Dealer CF MOTO",
+  title: "QuadyPradła - Autoryzowany Dealer CFmoto i GOES | ATV, UTV, SSV, Motocykle",
   description:
-    "Autoryzowany dealer i serwis quadów CF MOTO. Kompleksowe wsparcie dla pasjonatów - sprzedaż, serwis ASO, akcesoria i odzież.",
+    "QuadyPradła to rodzinna firma - autoryzowany dealer CFmoto i GOES. Sprzedaż quadów ATV, UTV, SSV, motocykli oraz profesjonalny serwis ASO w Pradłach. Kompleksowe doradztwo i akcesoria.",
+  keywords: "CFmoto, GOES, ATV, UTV, SSV, quad, quady, motocykle, Pradła, dealer, serwis ASO, akcesoria, CFORCE, UFORCE",
   generator: "v0.app",
   icons: {
     icon: [

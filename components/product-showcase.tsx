@@ -56,7 +56,7 @@ export function ProductShowcase() {
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden">
                     <img
-                      src={product.image || "/placeholder.svg"}
+                      src={product.image || "/cf-moto-pradla/placeholder.svg"}
                       alt={product.name}
                       className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 block"
                     />

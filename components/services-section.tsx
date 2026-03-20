@@ -7,27 +7,24 @@ import { motion } from "framer-motion"
 const services = [
   {
     icon: ShoppingCart,
-    title: "Sprzedaż Quadów",
-    description: "Nowe modele CF MOTO dostępne od ręki.",
-    bgColor: "bg-[#2d5016]", // Deep Forest Green
-    iconBg: "bg-[#4a7c2a]/20",
-    iconColor: "text-[#6da83e]",
+    title: "Sprzedaż Pojazdów",
+    description: "Pełna oferta CFmoto i GOES - quady ATV, UTV, SSV i motocykle dostępne od ręki.",
+    iconBg: "bg-primary/10",
+    iconColor: "text-primary",
   },
   {
     icon: Wrench,
     title: "Autoryzowany Serwis ASO",
-    description: "Profesjonalna diagnostyka i naprawy gwarancyjne.",
-    bgColor: "bg-[#8b6f47]", // Warm Earthy Brown
-    iconBg: "bg-[#b89968]/20",
-    iconColor: "text-[#d4b483]",
+    description: "Profesjonalna diagnostyka, naprawy gwarancyjne i konserwacja pojazdów terenowych.",
+    iconBg: "bg-primary/10",
+    iconColor: "text-primary",
   },
   {
     icon: Shirt,
-    title: "Akcesoria i Odzież",
-    description: "Wszystko, czego potrzebujesz: od kasków po profesjonalny ubiór off-road.",
-    bgColor: "bg-[#5c6b3d]", // Moss Green
-    iconBg: "bg-[#7d8f5a]/20",
-    iconColor: "text-[#9fb876]",
+    title: "Akcesoria i Wyposażenie",
+    description: "Kompleksowy asortyment: od kasków i odzieży po przyczepki i wyposażenie robocze.",
+    iconBg: "bg-primary/10",
+    iconColor: "text-primary",
   },
 ]
 
@@ -59,15 +56,13 @@ export function ServicesSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card
-                className={`h-full hover:shadow-xl transition-all duration-300 border-2 shadow-md ${service.bgColor}`}
-              >
+              <Card className="h-full hover:shadow-xl transition-all duration-300 border-2 shadow-md bg-background">
                 <CardContent className="p-8">
                   <div className={`w-14 h-14 rounded-lg ${service.iconBg} flex items-center justify-center mb-6`}>
                     <service.icon className={`w-7 h-7 ${service.iconColor}`} />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-                  <p className="text-gray-100 leading-relaxed">{service.description}</p>
+                  <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             </motion.div>

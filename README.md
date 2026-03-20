@@ -1,5 +1,25 @@
 # CF MOTO landing page
 
+> **🚀 QuadyPradła - Autoryzowany Dealer CFmoto i GOES**
+
+## 📋 Zaczynając Pracę Jutro?
+
+**Przeczytaj to najpierw:**
+1. 📋 **[CHECKLIST.md](CHECKLIST.md)** - Quick checklist na dziś (zacznij tutaj!)
+2. 📝 **[TODO-JUTRO.md](TODO-JUTRO.md)** - Pełny plan działania
+3. 🔧 **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Gdy coś nie działa
+4. 📊 **[PODSUMOWANIE-SESJI.md](PODSUMOWANIE-SESJI.md)** - Co zostało zrobione wczoraj
+
+**Quick Start:**
+```bash
+pnpm dev  # Uruchom dev server
+# Otwórz: http://localhost:3000/cf-moto-pradla/
+```
+
+**Status Projektu:** ✅ 80% Gotowe | ⏳ 3-4h do finału
+
+---
+
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/lljaworskis-projects/v0-cf-moto-landing-page)
