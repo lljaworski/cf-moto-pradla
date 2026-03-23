@@ -19,14 +19,14 @@ const brands = [
     slug: "goes",
     description: "Quady ATV",
     tagline: "Niezawodne quady do pracy i rekreacji",
-    image: "/cf-moto-pradla/placeholder.svg",
+    image: "https://cms.goes.pl/wp-content/uploads/2025/09/GOES-TERROX-1000-1.webp",
     bgColor: "from-secondary/20 to-secondary/5",
   },
 ]
 
 export function BrandsGateway() {
   return (
-    <section id="marki" className="py-20 md:py-32 bg-background">
+    <section id="marki" className="py-18 md:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export function BrandsGateway() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">Nasze Marki</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">Nasze Marki</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Wybierz markę i poznaj dostępne modele pojazdów terenowych
           </p>
@@ -57,7 +57,7 @@ export function BrandsGateway() {
                       <img
                         src={brand.image || "/cf-moto-pradla/placeholder.svg"}
                         alt={brand.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className={`absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent`} />
                       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center">
@@ -67,7 +67,7 @@ export function BrandsGateway() {
                           transition={{ duration: 0.6, delay: index * 0.15 + 0.3 }}
                           viewport={{ once: true }}
                         >
-                          <h3 className="text-5xl font-bold mb-3 drop-shadow-lg">{brand.name}</h3>
+                          <h3 className="text-4xl font-bold mb-3 drop-shadow-lg">{brand.name}</h3>
                           <p className="text-lg text-white/90 mb-2 font-medium">{brand.description}</p>
                           <p className="text-sm text-white/80 mb-6">{brand.tagline}</p>
                           <div className="inline-flex items-center gap-2 text-base font-semibold bg-primary/90 hover:bg-primary px-6 py-3 rounded-lg transition-colors group-hover:scale-105 transform duration-300">

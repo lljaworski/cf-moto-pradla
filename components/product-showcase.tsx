@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
@@ -39,7 +39,7 @@ export function ProductShowcase() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">Modele CF MOTO</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">Modele CF MOTO</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Wybierz model dopasowany do Twoich potrzeb</p>
         </motion.div>
 
@@ -52,34 +52,34 @@ export function ProductShowcase() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-xl transition-all duration-300 border-2 group overflow-hidden shadow-md bg-background p-0">
+              <Card className="h-full hover:shadow-xl transition-all duration-300 border-2 group overflow-hidden cursor-pointer">
                 <CardContent className="p-0">
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden h-80">
                     <img
                       src={product.image || "/cf-moto-pradla/placeholder.svg"}
                       alt={product.name}
-                      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300 block"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <h3 className="text-xl font-bold mb-3">{product.name}</h3>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {product.specs.map((spec) => (
+                          <span
+                            key={spec}
+                            className="px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full"
+                          >
+                            {spec}
+                          </span>
+                        ))}
+                      </div>
+                      <Button variant="secondary" className="w-full group/btn">
+                        Dowiedz się więcej
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
-                <CardHeader>
-                  <CardTitle className="text-xl mb-3">{product.name}</CardTitle>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {product.specs.map((spec) => (
-                      <span
-                        key={spec}
-                        className="px-3 py-1 bg-muted text-muted-foreground text-xs font-medium rounded-full"
-                      >
-                        {spec}
-                      </span>
-                    ))}
-                  </div>
-                  <Button variant="ghost" className="w-full group/btn">
-                    Dowiedz się więcej
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
-                </CardHeader>
               </Card>
             </motion.div>
           ))}

@@ -17,7 +17,7 @@ const categories = [
     slug: "ssv",
     name: "Pojazdy SSV",
     description: "Sportowe pojazdy side-by-side do ekstremalnej jazdy",
-    image: "/cf-moto-pradla/cf-moto-zforce-950-ssv-side-by-side.jpg",
+    image: "https://cfmoto.pl/static/1d25607db3ada2daa3d57ef42b2b78ee/0a271/CFMOTO_Z950-Sport_slider.webp",
     count: "Sprawdź modele",
   },
   {
@@ -31,7 +31,7 @@ const categories = [
     slug: "motocykle",
     name: "Motocykle",
     description: "Motocykle terenowe i miejskie",
-    image: "/cf-moto-pradla/cf-moto-800mt-motocykl.jpg",
+    image: "https://cfmoto.pl/static/d1e5aba10814753efc4c0f4aa2b4c7d4/790b4/800MT-ES_Neptune-Blue_right.webp",
     count: "Sprawdź modele",
   },
 ]
@@ -46,7 +46,7 @@ export function CFMotoSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             CFmoto
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -66,13 +66,13 @@ export function CFMotoSection() {
               <Link href={`/cfmoto/${category.slug}`}>
                 <Card className="h-full hover:shadow-xl transition-all duration-300 border-2 group overflow-hidden cursor-pointer">
                   <CardContent className="p-0">
-                    <div className="relative overflow-hidden h-64">
+                    <div className="relative overflow-hidden h-80">
                       <img
                         src={category.image || "/cf-moto-pradla/placeholder.svg"}
                         alt={category.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                         <h3 className="text-2xl font-bold mb-2">{category.name}</h3>
                         <p className="text-sm text-white/90 mb-3">{category.description}</p>

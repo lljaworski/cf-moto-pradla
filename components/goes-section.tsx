@@ -10,7 +10,7 @@ const categories = [
     slug: "atv",
     name: "Quady ATV",
     description: "Niezawodne quady GOES do rekreacji i pracy w terenie",
-    image: "/cf-moto-pradla/goes-cobalt-550-atv-quad.jpg",
+    image: "https://cms.goes.pl/wp-content/uploads/2025/09/CFMOTO_GOES_Terrox-500-2.webp",
     count: "Szeroki wybór modeli",
   },
 ]
@@ -25,7 +25,7 @@ export function GoesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             GOES
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -48,11 +48,11 @@ export function GoesSection() {
                       <img
                         src={category.image || "/cf-moto-pradla/placeholder.svg"}
                         alt={category.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                        <h3 className="text-3xl font-bold mb-3">{category.name}</h3>
+                        <h3 className="text-2xl font-bold mb-3">{category.name}</h3>
                         <p className="text-base text-white/90 mb-4">{category.description}</p>
                         <div className="flex items-center justify-between">
                           <span className="text-sm text-white/80">{category.count}</span>

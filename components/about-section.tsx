@@ -15,7 +15,7 @@ const features = [
 
 export function AboutSection() {
   return (
-    <section id="o-nas" className="py-20 md:py-32 bg-card">
+    <section id="o-nas" className="py-18 md:py-28 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -24,7 +24,7 @@ export function AboutSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
               O Nas
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">

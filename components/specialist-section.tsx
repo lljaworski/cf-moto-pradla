@@ -14,7 +14,7 @@ export function SpecialistSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
               Sprzęt do Zadań Specjalnych
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">

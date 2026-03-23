@@ -7,7 +7,7 @@ import { MapPin, Phone, Star } from "lucide-react"
 
 export function ContactSection() {
   return (
-    <section id="kontakt" className="py-20 md:py-32 bg-secondary text-primary-foreground">
+    <section id="kontakt" className="py-18 md:py-28 bg-secondary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Odwiedź Nas w Pradle</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Odwiedź Nas w Pradle</h2>
           <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">Zapraszamy do naszego salonu i serwisu</p>
         </motion.div>
 

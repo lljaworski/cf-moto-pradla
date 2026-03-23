@@ -13,8 +13,6 @@ export function HeroSection() {
           alt="CF MOTO quad riding up sand dune at sunset"
           className="w-full h-full object-cover"
         />
-        {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/40 to-transparent" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 relative z-20">
