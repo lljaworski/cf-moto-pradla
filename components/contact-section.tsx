@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Star } from "lucide-react"
+import { MapPin, Phone, Clock } from "lucide-react"
 
 export function ContactSection() {
   return (
@@ -50,23 +50,36 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-bold text-foreground mb-1">Telefon</h3>
-                      <a href="tel:609309741" className="text-primary text-lg font-semibold hover:underline">
-                        609 309 741
-                      </a>
+                      <div className="flex flex-col gap-1">
+                        <a href="tel:609309741" className="text-primary text-base font-semibold hover:underline">
+                          609 309 741
+                        </a>
+                        <a href="tel:609309742" className="text-primary text-base font-semibold hover:underline">
+                          609 309 742
+                        </a>
+                        <a href="tel:881639953" className="text-primary text-base font-semibold hover:underline">
+                          881 639 953 <span className="text-muted-foreground font-normal text-sm ml-1">(serwis)</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Star className="w-6 h-6 text-primary" />
+                      <Clock className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Zaufanie klientów</h3>
-                      <p className="text-muted-foreground">
-                        Średnia ocena <span className="font-bold text-foreground">4.6/5</span>
-                        <br />
-                        Ponad <span className="font-bold text-foreground">4600 opinii</span>
-                      </p>
+                      <h3 className="font-bold text-foreground mb-1">Godziny otwarcia</h3>
+                      <div className="text-muted-foreground text-[15px] grid grid-cols-[160px_1fr] gap-y-1 leading-relaxed mt-2">
+                        <span>Poniedziałek - Piątek:</span>
+                        <span className="font-medium text-foreground">7:00 - 20:00</span>
+                        
+                        <span>Sobota:</span>
+                        <span className="font-medium text-foreground">8:00 - 16:00</span>
+                        
+                        <span>Niedziela:</span>
+                        <span className="font-medium text-foreground">9:00 - 13:00</span>
+                      </div>
                     </div>
                   </div>
 

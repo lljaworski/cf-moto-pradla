@@ -38,7 +38,9 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button className="hidden md:inline-flex">609 309 741</Button>
+            <Button className="hidden md:inline-flex" asChild>
+              <a href="/cf-moto-pradla/#kontakt">Skontaktuj się</a>
+            </Button>
             <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Menu className="h-5 w-5" />
             </Button>

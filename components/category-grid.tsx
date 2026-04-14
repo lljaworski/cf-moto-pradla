@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, ArrowLeft } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { getProductsByBrandAndCategory, type Brand, type Category } from "@/lib/products"
 
@@ -46,7 +46,6 @@ const getCategoryDescription = (brand: string, category: string) => {
 export function CategoryGrid({ brand, category }: CategoryGridProps) {
   const title = getCategoryTitle(brand, category)
   const description = getCategoryDescription(brand, category)
-  const backUrl = brand === "cfmoto" ? "/cfmoto" : "/goes"
   
   // Get real products from lib/products.ts
   const products = getProductsByBrandAndCategory(brand, category as Category)
@@ -63,24 +62,15 @@ export function CategoryGrid({ brand, category }: CategoryGridProps) {
   ]
 
   return (
-    <section className="py-20 md:py-32 bg-background">
+    <section className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
         >
-          <Link
-            href={backUrl}
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Powrót do {brand.toUpperCase()}
-          </Link>
-
-          <div className="mb-16">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">{title}</h1>
+          <div className="mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">{title}</h2>
             <p className="text-lg text-muted-foreground max-w-3xl">{description}</p>
           </div>
 
